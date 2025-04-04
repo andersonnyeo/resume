@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anderson Yeo - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- AOS (Animate on Scroll) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Anderson Yeo</h1>
-        <p>Final-year BSc Computer Science with AI | Full Stack Developer</p>
-    </header>
 
+    <!-- Navigation -->
     <nav>
-        <ul>
+        <div class="logo">Anderson Yeo</div>
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -24,61 +29,71 @@
             <li><a href="#awards">Awards</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <button id="theme-toggle"><i class="fas fa-moon"></i></button>
     </nav>
 
-    <section id="about" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>Final-year Computer Science with AI student at the University of Nottingham with expertise in software development, machine learning, and web technologies.</p>
-        <h3>Skills</h3>
-        <ul>
-            <li><i class="fas fa-code"></i> Python, Flutter, SQL, HTML, CSS</li>
-            <li><i class="fas fa-database"></i> Java, JavaScript, C, PHP, Haskell</li>
-        </ul>
-    </section>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Anderson Yeo</h1>
+        <p>Final-Year BSc Computer Science with AI | Full Stack Developer</p>
+    </header>
 
-    <section id="education" data-aos="fade-up">
-        <h2>Education</h2>
-        <h3>University of Nottingham</h3>
-        <p>BSc Computer Science with Artificial Intelligence (2022 – 2025)</p>
-        <p>Relevant modules: Programming & Algorithms, Machine Learning, Software Engineering, Human-AI Interaction.</p>
-        <h3>Swinburne University of Technology, Malaysia</h3>
-        <p>Foundation in Information Technology (2021) | CGPA: 3.56</p>
-    </section>
+    <!-- Sections -->
+    <main>
+        <section id="about" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p>Final-year Computer Science with AI student at the University of Nottingham with expertise in software development, machine learning, and web technologies.</p>
+            <h3>Skills</h3>
+            <div class="skills">
+                <span>Python</span> <span>Flutter</span> <span>SQL</span> 
+                <span>Java</span> <span>JavaScript</span> <span>HTML & CSS</span>
+            </div>
+        </section>
 
-    <section id="experience" data-aos="fade-up">
-        <h2>Experience</h2>
-        <h3>Data Analyst Intern - AIA Malaysia</h3>
-        <p>(June 2024 – August 2024)</p>
-        <p>Tracked key campaign metrics, developed Power BI dashboards, and conducted claims trend studies to forecast future trends.</p>
-        <h3>Software Developer Intern - EEC Group</h3>
-        <p>Worked with Laravel, JavaScript, and responsive design to create efficient web solutions.</p>
-    </section>
+        <section id="education" data-aos="fade-up">
+            <h2>Education</h2>
+            <div class="edu-box">
+                <h3>University of Nottingham</h3>
+                <p>BSc Computer Science with AI (2022 – 2025)</p>
+            </div>
+            <div class="edu-box">
+                <h3>Swinburne University</h3>
+                <p>Foundation in IT (2021) | CGPA: 3.56</p>
+            </div>
+        </section>
 
-    <section id="projects" data-aos="fade-up">
-        <h2>Projects</h2>
-        <h3>Trackify - AI-Driven Expense Tracker</h3>
-        <p>(Sept 2024 – May 2025)</p>
-        <p>Developing an AI-powered personal finance app using Flutter & Firebase. Implements NLP-based expense categorization and ML-driven spending predictions.</p>
-        <h3>FitTrack - Workout Tracking App</h3>
-        <p>(Sept 2023 – May 2024)</p>
-        <p>Collaborated in a team of five to develop a real-time workout tracker with enhanced UI and exercise categorization.</p>
-    </section>
+        <section id="experience" data-aos="fade-up">
+            <h2>Experience</h2>
+            <div class="exp-box">
+                <h3>Data Analyst Intern - AIA Malaysia</h3>
+                <p>(June 2024 – August 2024)</p>
+            </div>
+            <div class="exp-box">
+                <h3>Software Developer Intern - EEC Group</h3>
+                <p>Developed web solutions using Laravel, JavaScript, and more.</p>
+            </div>
+        </section>
 
-    <section id="awards" data-aos="fade-up">
-        <h2>Awards</h2>
-        <ul>
-            <li>🏆 <b>Third Place</b> - Best Industry Project 2024 (Software Engineering Group Project Module)</li>
-            <li>🎖️ <b>Nottingham s-CPD High Achiever Award</b> (2022-2023)</li>
-            <li>💰 <b>Swinburne Youth Scholarship</b> (2022)</li>
-        </ul>
-    </section>
+        <section id="projects" data-aos="fade-up">
+            <h2>Projects</h2>
+            <div class="project-box">
+                <h3>Trackify - AI Expense Tracker</h3>
+                <p>Developing an AI-powered personal finance app using Flutter & Firebase.</p>
+            </div>
+        </section>
 
-    <section id="contact" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p><i class="fas fa-envelope"></i> Email: andersonsoonkai@gmail.com</p>
-        <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/andersonnyeo">github.com/andersonnyeo</a></p>
-        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/andersonyeo">linkedin.com/in/andersonyeo</a></p>
-    </section>
+        <section id="awards" data-aos="fade-up">
+            <h2>Awards</h2>
+            <ul>
+                <li>🏆 <b>Best Industry Project 2024</b> (Third Place)</li>
+            </ul>
+        </section>
+
+        <section id="contact" data-aos="fade-up">
+            <h2>Contact</h2>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:andersonsoonkai@gmail.com">andersonsoonkai@gmail.com</a></p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Anderson Yeo. All Rights Reserved.</p>
@@ -86,6 +101,10 @@
 
     <script>
         AOS.init();
+        document.getElementById("theme-toggle").addEventListener("click", function() {
+            document.body.classList.toggle("light-mode");
+        });
     </script>
+
 </body>
 </html>
