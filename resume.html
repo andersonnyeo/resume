@@ -7,25 +7,30 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
+        
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
-            color: #333;
+            background: #121212;
+            color: #ffffff;
         }
         header {
-            background: #282c34;
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
             color: white;
             text-align: center;
-            padding: 20px;
-            font-size: 1.5em;
+            padding: 60px 20px;
+            font-size: 2em;
+            font-weight: bold;
         }
         nav {
             display: flex;
             justify-content: center;
-            background: #333;
-            padding: 10px;
+            background: #1e1e1e;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav ul {
             list-style: none;
@@ -33,25 +38,33 @@
             display: flex;
         }
         nav ul li {
-            margin: 0 15px;
+            margin: 0 20px;
         }
         nav ul li a {
             text-decoration: none;
-            color: white;
-            font-size: 1.2em;
+            color: #00bcd4;
+            font-size: 1.3em;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff9800;
         }
         section {
-            padding: 40px;
+            padding: 50px;
             max-width: 900px;
             margin: auto;
-            background: white;
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #222;
+            margin-top: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 188, 212, 0.5);
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: scale(1.02);
         }
         h2 {
-            color: #444;
-            border-bottom: 2px solid #ddd;
+            color: #00bcd4;
+            border-bottom: 2px solid #ff9800;
             padding-bottom: 10px;
         }
         ul {
@@ -59,20 +72,29 @@
             padding: 0;
         }
         ul li {
-            background: #eee;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
+            background: #333;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+        }
+        ul li i {
+            margin-right: 10px;
+            color: #ff9800;
         }
         a {
-            color: #0066cc;
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: bold;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background: #333;
-            color: white;
-            margin-top: 20px;
+            background: #1e1e1e;
+            margin-top: 30px;
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -91,17 +113,19 @@
     </nav>
     <section id="about">
         <h2>About Me</h2>
-        <p>Final-year Computer Science with AI student at the University of Nottingham with a strong foundation in software development, machine learning, and web technologies.</p>
+        <p>Final-year Computer Science with AI student at the University of Nottingham with expertise in software development, machine learning, and web technologies.</p>
         <h3>Skills</h3>
         <ul>
-            <li>Python, HTML, CSS, Flutter, SQL</li>
-            <li>Java, JavaScript, C, PHP, Haskell</li>
+            <li><i class="fas fa-code"></i> Python, HTML, CSS, Flutter, SQL</li>
+            <li><i class="fas fa-database"></i> Java, JavaScript, C, PHP, Haskell</li>
         </ul>
     </section>
     <section id="experience">
         <h2>Experience</h2>
         <h3>Data Analyst Intern - AIA Malaysia</h3>
         <p>Developed Power BI dashboards and conducted data analysis for campaign tracking and forecasting.</p>
+        <h3>Software Developer Intern - EEC Group</h3>
+        <p>Worked with Laravel, JavaScript, and responsive design to create efficient web solutions.</p>
     </section>
     <section id="projects">
         <h2>Projects</h2>
@@ -109,11 +133,14 @@
         <p>Developing an AI-powered personal finance management app using Flutter and Firebase.</p>
         <h3>FitTrack - Workout Tracking App</h3>
         <p>Implemented real-time tracking and UI enhancements using Flutter.</p>
+        <h3>Basketball Shot Selection AI</h3>
+        <p>Developing a reinforcement learning model using Deep Q-Learning for optimized shot selection.</p>
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: andersonsoonkai@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/andersonnyeo">github.com/andersonnyeo</a></p>
+        <p><i class="fas fa-envelope"></i> Email: andersonsoonkai@gmail.com</p>
+        <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/andersonnyeo">github.com/andersonnyeo</a></p>
+        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/andersonyeo">linkedin.com/in/andersonyeo</a></p>
     </section>
     <footer>
         <p>&copy; 2025 Anderson Yeo. All Rights Reserved.</p>
