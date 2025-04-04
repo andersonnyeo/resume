@@ -42,11 +42,12 @@
     <main>
         <section id="about" data-aos="fade-up">
             <h2>About Me</h2>
-            <p>Final-year Computer Science with AI student at the University of Nottingham with expertise in software development, machine learning, and web technologies.</p>
+            <p>As a final-year Computer Science with Artificial Intelligence student at the University of Nottingham, I have developed a robust foundation in programming, software development, and machine learning. My passion lies in leveraging technology to solve real-world problems, and I have a keen interest in data analytics and full-stack development.</p>
             <h3>Skills</h3>
             <div class="skills">
                 <span>Python</span> <span>Flutter</span> <span>SQL</span> 
                 <span>Java</span> <span>JavaScript</span> <span>HTML & CSS</span>
+                <span>Power BI</span> <span>Data Analytics</span>
             </div>
         </section>
 
@@ -54,7 +55,7 @@
             <h2>Education</h2>
             <div class="edu-box">
                 <h3>University of Nottingham</h3>
-                <p>BSc Computer Science with AI (2022 – 2025)</p>
+                <p>BSc Computer Science with Artificial Intelligence (2022 – 2025)</p>
             </div>
             <div class="edu-box">
                 <h3>Swinburne University</h3>
@@ -67,10 +68,20 @@
             <div class="exp-box">
                 <h3>Data Analyst Intern - AIA Malaysia</h3>
                 <p>(June 2024 – August 2024)</p>
+                <ul>
+                    <li>Conducted in-depth campaign analytics to optimize marketing strategies and enhance campaign performance.</li>
+                    <li>Developed intuitive and insightful Power BI dashboards, empowering teams with actionable data.</li>
+                    <li>Identified emerging patterns through trend forecasting, providing foresight to help the business stay ahead of the curve.</li>
+                    <li>Delivered data-driven insights that supported various teams in making informed decisions, driving customer engagement, and advancing key business objectives.</li>
+                </ul>
             </div>
             <div class="exp-box">
                 <h3>Software Developer Intern - EEC Group</h3>
-                <p>Developed web solutions using Laravel, JavaScript, and more.</p>
+                <p>(Dates Not Specified)</p>
+                <ul>
+                    <li>Developed web solutions using Laravel, JavaScript, and other technologies.</li>
+                    <li>Collaborated with cross-functional teams to design, develop, and implement software solutions that met client requirements.</li>
+                </ul>
             </div>
         </section>
 
@@ -78,7 +89,11 @@
             <h2>Projects</h2>
             <div class="project-box">
                 <h3>Trackify - AI Expense Tracker</h3>
-                <p>Developing an AI-powered personal finance app using Flutter & Firebase.</p>
+                <p>Developing an AI-powered personal finance app using Flutter & Firebase to help users track and manage their expenses effectively.</p>
+            </div>
+            <div class="project-box">
+                <h3>Power BI Dashboard for Campaign Analytics</h3>
+                <p>Designed and implemented a comprehensive Power BI dashboard during my internship at AIA Malaysia, providing real-time insights into campaign performance and customer engagement metrics.</p>
             </div>
         </section>
 
@@ -92,6 +107,7 @@
         <section id="contact" data-aos="fade-up">
             <h2>Contact</h2>
             <p><i class="fas fa-envelope"></i> Email: <a href="mailto:andersonsoonkai@gmail.com">andersonsoonkai@gmail.com</a></p>
+            <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/andersonnyeo" target="_blank">linkedin.com/in/andersonnyeo</a></p>
         </section>
     </main>
 
@@ -103,6 +119,14 @@
         AOS.init();
         document.getElementById("theme-toggle").addEventListener("click", function() {
             document.body.classList.toggle("light-mode");
+            const icon = this.querySelector("i");
+            if (document.body.classList.contains("light-mode")) {
+                icon.classList.remove("fa-moon");
+                icon.classList.add("fa-sun");
+            } else {
+                icon.classList.remove("fa-sun");
+                icon.classList.add("fa-moon");
+            }
         });
     </script>
 
